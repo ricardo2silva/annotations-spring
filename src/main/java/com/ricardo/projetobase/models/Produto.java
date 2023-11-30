@@ -1,9 +1,11 @@
 package com.ricardo.projetobase.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "tb_produto")
+@Data
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,8 +17,7 @@ public class Produto {
     private Double preco;
     public Produto(){}
 
-    public Produto(Long id, String nome, Double preco) {
-        this.id = id;
+    public Produto(String nome, Double preco) {
         this.nome = nome;
         this.preco = preco;
     }
