@@ -8,3 +8,7 @@
 ## @AutoWired
 
 ### anotação usada normalmente para fazer injeção de dependencia sem a necessidade do construtor.
+
+## @Qualifier
+
+### esta anotação é utilizada quando existe mais de um bean que implementa uma mesma interface, o Spring não consegue inferir qual bean ele deve injetar, entao devemos anotar no ponto de injeção com esta anotação, qualificando quem vai ser injetado.
