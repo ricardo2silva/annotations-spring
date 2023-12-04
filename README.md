@@ -24,3 +24,7 @@
 ## @Bean
 
 ### quando anotamos um metodo com o @Bean, estamos dizendo que aquele metodo devera ser gerenciado pelo spring, sendo assim controlando seu ciclo de vida, mas para funcionar é preciso anotar a classe em que este metodo está sendo usado com o @configuration
+
+## @Lazy
+
+## quando criamos um bean, no momento em que a aplicação sobe, o spring faz uma varredura na aplicação para sabe quais classes vao ser gerenciadas por ele, entao elas sao carregadas no momento em que a aplicação sobe ficando disponivel na aplicação de forma global,chamamos de eager ou ansioso, quando anotamos uma classe com @Lazy estamos falando para o spring criar aquele bean quando apenas for necessario

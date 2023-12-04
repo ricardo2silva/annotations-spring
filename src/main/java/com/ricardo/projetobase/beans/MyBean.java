@@ -1,4 +1,4 @@
-package com.ricardo.projetobase.config;
+package com.ricardo.projetobase.beans;
 
 public class MyBean {
 

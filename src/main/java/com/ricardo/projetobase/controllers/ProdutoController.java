@@ -1,6 +1,7 @@
 package com.ricardo.projetobase.controllers;
 
-import com.ricardo.projetobase.config.MyBean;
+import com.ricardo.projetobase.beans.LazyBean;
+import com.ricardo.projetobase.beans.MyBean;
 import com.ricardo.projetobase.models.Produto;
 import com.ricardo.projetobase.models.dtos.ProdutoDTO;
 import com.ricardo.projetobase.services.ProdutoService;
@@ -26,6 +27,8 @@ public class ProdutoController {
 
     @Autowired
     private MyBean myBean;
+    @Autowired
+    private LazyBean lazyBean;
 
     @PostMapping("/salvarProduto")
     public ResponseEntity<Produto> salvarProduto(@RequestBody ProdutoDTO produtoDTO) {
