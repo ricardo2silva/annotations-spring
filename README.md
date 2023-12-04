@@ -17,3 +17,10 @@
 
 ### utilizamos essa anotação para recuperar informações do arquivo de propriedades
 
+## @Configuration
+
+### quando utilizamos a anotação @Configuration, estamos dizendo ao spring que é aquela classe é uma classe de configuração, utilizamos ela nomrmalmente para deixar algumas classes de forma global no projeto
+
+## @Bean
+
+### quando anotamos um metodo com o @Bean, estamos dizendo que aquele metodo devera ser gerenciado pelo spring, sendo assim controlando seu ciclo de vida, mas para funcionar é preciso anotar a classe em que este metodo está sendo usado com o @configuration

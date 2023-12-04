@@ -4,8 +4,9 @@ import com.ricardo.projetobase.models.Produto;
 import com.ricardo.projetobase.models.dtos.ProdutoDTO;
 import com.ricardo.projetobase.repositories.ProdutoRepository;
 import com.ricardo.projetobase.services.ProdutoService;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ import java.util.List;
 public class ProdutoServiceImpl implements ProdutoService {
 
     private final ProdutoRepository produtoRepository;
+    @Autowired
+    private ModelMapper modelMapper;
 
     public ProdutoServiceImpl(ProdutoRepository produtoRepository) {
         this.produtoRepository = produtoRepository;
