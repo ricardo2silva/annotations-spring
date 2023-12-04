@@ -33,3 +33,6 @@
 
 ### é uma forma de vc definir quem vai ser injetado, a diferençã é que com o Primary vc anota a classe, dando a preferencia para ela ser injetada, quando utilizamos o @Qualifier vc anota no ponto de injeção passando como parametro o nome da classe.
 
+## @Scope
+
+## por padrao o spring utiliza o scopo de 'singleton' onde ele instancia apenas uma unica vez o bean gerenciado e utiliza ele sempre que precisar (conhecido anteriormente como eager:ansioso), já o scopo 'prototype', ele sempre sera lazy ou 'preguicoso como chamamos', neste caso ele sempre vai criar uma nova instancia quando precisar

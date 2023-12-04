@@ -8,6 +8,7 @@ import com.ricardo.projetobase.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @Component
 @RequestMapping("/produtos")
+@Scope("prototype")
 public class ProdutoController {
 
     @Value("${teste.value}")
@@ -29,6 +31,10 @@ public class ProdutoController {
     private MyBean myBean;
     @Autowired
     private LazyBean lazyBean;
+
+    public ProdutoController() {
+        System.out.println("controller iniciado");
+    }
 
     @PostMapping("/salvarProduto")
     public ResponseEntity<Produto> salvarProduto(@RequestBody ProdutoDTO produtoDTO) {
