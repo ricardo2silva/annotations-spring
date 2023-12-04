@@ -27,4 +27,9 @@
 
 ## @Lazy
 
-## quando criamos um bean, no momento em que a aplicação sobe, o spring faz uma varredura na aplicação para sabe quais classes vao ser gerenciadas por ele, entao elas sao carregadas no momento em que a aplicação sobe ficando disponivel na aplicação de forma global,chamamos de eager ou ansioso, quando anotamos uma classe com @Lazy estamos falando para o spring criar aquele bean quando apenas for necessario
+### quando criamos um bean, no momento em que a aplicação sobe, o spring faz uma varredura na aplicação para sabe quais classes vao ser gerenciadas por ele, entao elas sao carregadas no momento em que a aplicação sobe ficando disponivel na aplicação de forma global,chamamos de eager ou ansioso, quando anotamos uma classe com @Lazy estamos falando para o spring criar aquele bean quando apenas for necessario
+
+## @Primary
+
+### é uma forma de vc definir quem vai ser injetado, a diferençã é que com o Primary vc anota a classe, dando a preferencia para ela ser injetada, quando utilizamos o @Qualifier vc anota no ponto de injeção passando como parametro o nome da classe.
+

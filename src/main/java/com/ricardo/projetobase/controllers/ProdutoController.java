@@ -22,7 +22,7 @@ public class ProdutoController {
     private String valorDaPropriedade;
 
     @Autowired
-    @Qualifier("produtoServiceImpl")
+    //@Qualifier("produtoServiceImpl")
     private  ProdutoService produtoService;
 
     @Autowired
