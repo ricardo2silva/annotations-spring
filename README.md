@@ -35,4 +35,9 @@
 
 ## @Scope
 
-## por padrao o spring utiliza o scopo de 'singleton' onde ele instancia apenas uma unica vez o bean gerenciado e utiliza ele sempre que precisar (conhecido anteriormente como eager:ansioso), já o scopo 'prototype', ele sempre sera lazy ou 'preguicoso como chamamos', neste caso ele sempre vai criar uma nova instancia quando precisar
+### por padrao o spring utiliza o scopo de 'singleton' onde ele instancia apenas uma unica vez o bean gerenciado e utiliza ele sempre que precisar (conhecido anteriormente como eager:ansioso), já o scopo 'prototype', ele sempre sera lazy ou 'preguicoso como chamamos', neste caso ele sempre vai criar uma nova instancia quando precisar
+
+## @PropertySource
+
+###  serve para  carregarmos informações de um properties customizados por exemplo, dessa forma ele carrega tanto o aplication.properties como default e o custom properties
+
