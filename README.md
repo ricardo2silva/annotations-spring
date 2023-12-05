@@ -41,3 +41,7 @@
 
 ###  serve para  carregarmos informações de um properties customizados por exemplo, dessa forma ele carrega tanto o aplication.properties como default e o custom properties
 
+## @Profile
+
+### com o @Profile podemos definir varios profiles diferentes, seja um properties de de, ou hml, ou até mesmo prod, podemos utilizar tanto a nivel de classe como alguns metodos
+
