@@ -45,3 +45,6 @@
 
 ### com o @Profile podemos definir varios profiles diferentes, seja um properties de de, ou hml, ou até mesmo prod, podemos utilizar tanto a nivel de classe como alguns metodos
 
+## @ConfigurationProperties
+
+### com esta anotação é possivel transformar propriedades em objetos ficando mais facil de utilizar, ao invés de pegar dado por dado
